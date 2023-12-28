@@ -9,7 +9,7 @@ test('Login Demo 1', async ({ page }) => {
     await page.locator('text=Sign in').click()
 
 })
-
+// we can run only one specific test by .only tag
 test.only('Login Demo 2', async ({ page }) => {
 
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
