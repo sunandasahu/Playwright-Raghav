@@ -25,7 +25,7 @@ test.only('Login Demo 2', async ({ page }) => {
     await page.getByPlaceholder('password').click();
     await page.getByPlaceholder('password').fill('admin123');
     await page.getByRole('button', { name: 'Login' }).click();
-    await page.locator('span').filter({ hasText: 'Paul Collings' }).locator('i').click();
+    //await page.locator('span').filter({ hasText: 'Paul Collings' }).locator('i').click();
     await page.getByRole('menuitem', { name: 'Logout' }).click();
 
 })
